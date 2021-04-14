@@ -1,9 +1,6 @@
 
 
-SUBELEMENT E1 COMMISSION RULES [6 Exam Questions 6 Groups] 75 Questions
-
-SUBELEMENT E1  COMMISSION RULES [6 Exam Questions  6 Groups]
-
+SUBELEMENT E1 - COMMISSION RULES [6 Exam Questions 6 Groups]
 
 E1A Operating Standards: frequency privileges; automatic message forwarding; stations aboard ships or aircraft; power restriction on 630 and 2200 meter bands
 
@@ -1965,7 +1962,7 @@ D. Your station receiver IF amplifier stage is defective
 ~~
 
 
-SUBELEMENT E5 ELECTRICAL PRINCIPLES [4 Exam Questions - 4 Groups]
+SUBELEMENT E5 - ELECTRICAL PRINCIPLES [4 Exam Questions - 4 Groups]
 
 
 E5A Resonance and Q: characteristics of resonant circuits: series and parallel resonance; definitions and effects of Q; half-power bandwidth; phase relationships in reactive circuits
@@ -5060,7 +5057,7 @@ D. High radiation angle
 ~~
 
 
-SUBELEMENT E0 SAFETY - [1 exam question - 1 group]
+SUBELEMENT E0 - SAFETY  [1 exam question - 1 group]
 
 
 E0A Safety: RF radiation hazards; hazardous materials; grounding 

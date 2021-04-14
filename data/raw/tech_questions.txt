@@ -2811,8 +2811,7 @@ B. Multi-conductor unbalanced cable
 C. Air-insulated hard line
 D. 75-ohm flexible coax
 ~~
-SUBELEMENT T0 – Electrical safety: AC and DC power circuits; antenna installation; RF hazards – [3 Exam Questions -
-3 Groups]
+SUBELEMENT T0 – Electrical safety: AC and DC power circuits; antenna installation; RF hazards – [3 Exam Questions - 3 Groups]
 T0A – Power circuits and hazards: hazardous voltages; fuses and circuit breakers; grounding; lightning protection; battery 
 safety; electrical code compliance
 T0A01 (B)

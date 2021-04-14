@@ -1,0 +1,62 @@
+[
+  {
+    "subelement_id": "T1",
+    "subelement_description": "FCC Rules, descriptions, and definitions for the Amateur Radio Service, operator and station license responsibilities",
+    "num_questions": 6,
+    "num_groups": 6
+  },
+  {
+    "subelement_id": "T2",
+    "subelement_description": "Operating Procedures",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "T3",
+    "subelement_description": "Radio wave characteristics: properties of radio waves; propagation modes",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "T4",
+    "subelement_description": "Amateur radio practices and station set-up",
+    "num_questions": 2,
+    "num_groups": 2
+  },
+  {
+    "subelement_id": "T5",
+    "subelement_description": "Electrical principles: math for electronics; electronic principles; Ohm\u2019s Law",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "T6",
+    "subelement_description": "Electrical components; circuit diagrams; component functions",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "T7",
+    "subelement_description": "Station equipment: common transmitter and receiver problems; antenna measurements; troubleshooting; basic repair and testing",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "T8",
+    "subelement_description": "Modulation modes: amateur satellite operation; operating activities; non-voice and digital communications",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "T9",
+    "subelement_description": "Antennas and feed lines",
+    "num_questions": 2,
+    "num_groups": 2
+  },
+  {
+    "subelement_id": "T0",
+    "subelement_description": "Electrical safety: AC and DC power circuits; antenna installation; RF hazards",
+    "num_questions": 3,
+    "num_groups": 3
+  }
+]

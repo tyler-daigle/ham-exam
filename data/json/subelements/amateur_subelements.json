@@ -1,0 +1,62 @@
+[
+  {
+    "subelement_id": "E1",
+    "subelement_description": "COMMISSION RULES",
+    "num_questions": 6,
+    "num_groups": 6
+  },
+  {
+    "subelement_id": "E2",
+    "subelement_description": "OPERATING PROCEDURES",
+    "num_questions": 5,
+    "num_groups": 5
+  },
+  {
+    "subelement_id": "E3",
+    "subelement_description": "RADIO WAVE PROPAGATION",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "E4",
+    "subelement_description": "AMATEUR PRACTICES",
+    "num_questions": 5,
+    "num_groups": 5
+  },
+  {
+    "subelement_id": "E5",
+    "subelement_description": "ELECTRICAL PRINCIPLES",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "E6",
+    "subelement_description": "CIRCUIT COMPONENTS",
+    "num_questions": 6,
+    "num_groups": 6
+  },
+  {
+    "subelement_id": "E7",
+    "subelement_description": "PRACTICAL CIRCUITS",
+    "num_questions": 8,
+    "num_groups": 8
+  },
+  {
+    "subelement_id": "E8",
+    "subelement_description": "SIGNALS AND EMISSIONS",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "E9",
+    "subelement_description": "ANTENNAS AND TRANSMISSION LINES",
+    "num_questions": 8,
+    "num_groups": 8
+  },
+  {
+    "subelement_id": "E0",
+    "subelement_description": "SAFETY ",
+    "num_questions": 1,
+    "num_groups": 1
+  }
+]

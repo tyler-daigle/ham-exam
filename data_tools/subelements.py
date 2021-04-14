@@ -1,6 +1,10 @@
 import sys
 import re
+import json
 from utils import is_new_section, is_question_id
+
+# SubElement Object 
+# {subelement_id, subelement_description, num_questions, num_groups}
 
 def get_subelements(data_file):
     subelements = []
@@ -20,7 +24,20 @@ def get_subelements(data_file):
                     # put the line we just read back
                     question_file.seek(temp_file_pos)
 
-                subelements.append(line.replace("\n", ""))
+                line = line.replace("\n", "")
+                info = line[line.find("[") + 1:].split()
+                num_questions = int(info[0])
+                num_groups = int(info[-2])
+
+                subelement = {
+                    "subelement_id" : line[11:13], 
+                    # "subelement_description" : line[16: line.find("[") - 3], 
+                    "subelement_description" : line[16: line.find("[") - 1], 
+                    "num_questions" : num_questions, 
+                    "num_groups" : num_groups
+                }
+
+                subelements.append(subelement)
             line = question_file.readline()
 
         return subelements
@@ -32,4 +49,5 @@ if len(sys.argv) < 2:
 else:
     data_file = sys.argv[1]
 
-print(get_subelements(data_file))
+subs = get_subelements(data_file)
+print(json.dumps(subs))

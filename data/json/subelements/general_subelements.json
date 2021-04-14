@@ -1,0 +1,62 @@
+[
+  {
+    "subelement_id": "G1",
+    "subelement_description": "COMMISSION\u2019S RULES",
+    "num_questions": 5,
+    "num_groups": 5
+  },
+  {
+    "subelement_id": "G2",
+    "subelement_description": "OPERATING PROCEDURES",
+    "num_questions": 5,
+    "num_groups": 5
+  },
+  {
+    "subelement_id": "G3",
+    "subelement_description": "RADIO WAVE PROPAGATION",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "G4",
+    "subelement_description": "AMATEUR RADIO PRACTICES",
+    "num_questions": 5,
+    "num_groups": 5
+  },
+  {
+    "subelement_id": "G5",
+    "subelement_description": "ELECTRICAL PRINCIPLES",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "G6",
+    "subelement_description": "CIRCUIT COMPONENTS",
+    "num_questions": 2,
+    "num_groups": 2
+  },
+  {
+    "subelement_id": "G7",
+    "subelement_description": "PRACTICAL CIRCUITS",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "G8",
+    "subelement_description": "SIGNALS AND EMISSIONS",
+    "num_questions": 3,
+    "num_groups": 3
+  },
+  {
+    "subelement_id": "G9",
+    "subelement_description": "ANTENNAS AND FEED LINES",
+    "num_questions": 4,
+    "num_groups": 4
+  },
+  {
+    "subelement_id": "G0",
+    "subelement_description": "ELECTRICAL AND RF SAFETY",
+    "num_questions": 2,
+    "num_groups": 2
+  }
+]
