@@ -1,0 +1,172 @@
+[
+  {
+    "subelement_id": "T1",
+    "section_id": "T1A",
+    "section_description": "Amateur Radio Service: purpose and permissible use of the Amateur Radio Service, operator/primary station license grant; Meanings of basic terms used in FCC rules; Interference; RACES rules; Phonetics; Frequency Coordinator"
+  },
+  {
+    "subelement_id": "T1",
+    "section_id": "T1B",
+    "section_description": "Authorized frequencies: frequency allocations; ITU; emission modes; restricted sub-bands; spectrum sharing; transmissions near band edges; contacting the International Space Station; power output "
+  },
+  {
+    "subelement_id": "T1",
+    "section_id": "T1C",
+    "section_description": "Operator licensing: operator classes; sequential and vanity call sign systems; international communications; reciprocal operation; places where the Amateur Radio Service is regulated by the FCC; name and address on FCC license database; license term; renewal; grace period"
+  },
+  {
+    "subelement_id": "T1",
+    "section_id": "T1D",
+    "section_description": "Authorized and prohibited transmission: communications with other countries; music; exchange of information with other services; indecent language; compensation for use of station; retransmission of other amateur signals; codes and ciphers; sale of equipment; unidentified transmissions; one-way transmission"
+  },
+  {
+    "subelement_id": "T1",
+    "section_id": "T1E",
+    "section_description": "Control operator and control types: control operator required; eligibility; designation of control operator; privileges and duties; control point; local, automatic and remote control; location of control operator "
+  },
+  {
+    "subelement_id": "T1",
+    "section_id": "T1F",
+    "section_description": "Station identification; repeaters; third-party communications; club stations; FCC inspection "
+  },
+  {
+    "subelement_id": "T2",
+    "section_id": "T2A",
+    "section_description": "Station operation: choosing an operating frequency; calling another station; test transmissions; procedural signs; use of minimum power; choosing an operating frequency; band plans; calling frequencies; repeater offsets "
+  },
+  {
+    "subelement_id": "T2",
+    "section_id": "T2B",
+    "section_description": "VHF/UHF operating practices: SSB phone; FM repeater; simplex; splits and shifts; CTCSS; DTMF; tone squelch; carrier squelch; phonetics; operational problem resolution; Q signals "
+  },
+  {
+    "subelement_id": "T2",
+    "section_id": "T2C",
+    "section_description": "Public service: emergency and non-emergency operations; applicability of FCC rules; RACES and ARES; net and traffic procedures; operating restrictions during emergencies"
+  },
+  {
+    "subelement_id": "T3",
+    "section_id": "T3A",
+    "section_description": "Radio wave characteristics: how a radio signal travels; fading; multipath; polarization; wavelength vs absorption; antenna orientation"
+  },
+  {
+    "subelement_id": "T3",
+    "section_id": "T3B",
+    "section_description": "Radio and electromagnetic wave properties: the electromagnetic spectrum; wavelength vs frequency; nature and velocity of electromagnetic waves; definition of UHF, VHF, HF bands; calculating wavelength"
+  },
+  {
+    "subelement_id": "T3",
+    "section_id": "T3C",
+    "section_description": "Propagation modes: line of sight; sporadic E; meteor and auroral scatter and reflections; tropospheric ducting; F layer skip; radio horizon "
+  },
+  {
+    "subelement_id": "T4",
+    "section_id": "T4A",
+    "section_description": "Station setup: connecting microphones; reducing unwanted emissions; power source; connecting a computer; RF grounding; connecting digital equipment; connecting an SWR meter"
+  },
+  {
+    "subelement_id": "T4",
+    "section_id": "T4B",
+    "section_description": "Operating controls: tuning; use of filters; squelch function; AGC; transceiver operation; memory channels "
+  },
+  {
+    "subelement_id": "T5",
+    "section_id": "T5A",
+    "section_description": "Electrical principles, units, and terms: current and voltage; conductors and insulators; alternating and direct current; series and parallel circuits"
+  },
+  {
+    "subelement_id": "T5",
+    "section_id": "T5B",
+    "section_description": "Math for electronics: conversion of electrical units; decibels; the metric system "
+  },
+  {
+    "subelement_id": "T5",
+    "section_id": "T5C",
+    "section_description": "Electronic principles: capacitance; inductance; current flow in circuits; alternating current; definition of RF; definition of polarity; DC power calculations; impedance"
+  },
+  {
+    "subelement_id": "T5",
+    "section_id": "T5D",
+    "section_description": "Ohm\u2019s Law: formulas and usage; components in series and parallel "
+  },
+  {
+    "subelement_id": "T6",
+    "section_id": "T6A",
+    "section_description": "Electrical components: fixed and variable resistors; capacitors and inductors; fuses; switches; batteries"
+  },
+  {
+    "subelement_id": "T6",
+    "section_id": "T6B",
+    "section_description": "Semiconductors: basic principles and applications of solid state devices; diodes and transistors "
+  },
+  {
+    "subelement_id": "T6",
+    "section_id": "T6C",
+    "section_description": "Circuit diagrams; schematic symbols "
+  },
+  {
+    "subelement_id": "T6",
+    "section_id": "T6D",
+    "section_description": "Component functions: rectification; switches; indicators; power supply components; resonant circuit; shielding; power transformers; integrated circuits"
+  },
+  {
+    "subelement_id": "T7",
+    "section_id": "T7A",
+    "section_description": "Station equipment: receivers; transmitters; transceivers; modulation; transverters; transmit and receive amplifiers"
+  },
+  {
+    "subelement_id": "T7",
+    "section_id": "T7B",
+    "section_description": "Common transmitter and receiver problems: symptoms of overload and overdrive; distortion; causes of interference; interference and consumer electronics; part 15 devices; over-modulation; RF feedback; off frequency signals"
+  },
+  {
+    "subelement_id": "T7",
+    "section_id": "T7C",
+    "section_description": "Antenna measurements and troubleshooting: measuring SWR; dummy loads; coaxial cables; causes of feed line failures"
+  },
+  {
+    "subelement_id": "T7",
+    "section_id": "T7D",
+    "section_description": "Basic repair and testing: soldering; using basic test instruments; connecting a voltmeter, ammeter, or ohmmeter "
+  },
+  {
+    "subelement_id": "T8",
+    "section_id": "T8A",
+    "section_description": "Modulation modes: bandwidth of various signals; choice of emission type"
+  },
+  {
+    "subelement_id": "T8",
+    "section_id": "T8C",
+    "section_description": "Operating activities: radio direction finding; radio control; contests; linking over the internet; grid locators "
+  },
+  {
+    "subelement_id": "T8",
+    "section_id": "T8D",
+    "section_description": "Non-voice and digital communications: image signals; digital modes; CW; packet radio; PSK31; APRS; error detection and correction; NTSC; amateur radio networking; Digital Mobile/Migration Radio"
+  },
+  {
+    "subelement_id": "T9",
+    "section_id": "T9A",
+    "section_description": "Antennas: vertical and horizontal polarization; concept of gain; common portable and mobile antennas; relationships between resonant length and frequency; concept of dipole antennas"
+  },
+  {
+    "subelement_id": "T9",
+    "section_id": "T9B",
+    "section_description": "Feed lines: types, attenuation vs frequency, selecting; SWR concepts; Antenna tuners (couplers); RF Connectors: selecting, weather protection"
+  },
+  {
+    "subelement_id": "T0",
+    "section_id": "T0A",
+    "section_description": "Power circuits and hazards: hazardous voltages; fuses and circuit breakers; grounding; lightning protection; battery safety; electrical code compliance"
+  },
+  {
+    "subelement_id": "T0",
+    "section_id": "T0B",
+    "section_description": "Antenna safety: tower safety and grounding; erecting an antenna support; safely installing an antenna"
+  },
+  {
+    "subelement_id": "T0",
+    "section_id": "T0C",
+    "section_description": "RF hazards: radiation exposure; proximity to antennas; recognized safe power levels; exposure to others; radiation types; duty cycle "
+  }
+]

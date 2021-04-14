@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 const Question = require("../models/Question");
 const fs = require("fs");
-
-const databaseHost = "localhost";
-const port = 27017;
-const databaseName = "ham_test";
+const { databaseHost, port, databaseName } = require("./config");
 
 if (process.argv.length < 3) {
   console.log("Enter the json file to add to the database.");

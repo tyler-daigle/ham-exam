@@ -1,0 +1,167 @@
+[
+  {
+    "subelement_id": "G1",
+    "section_id": "G1A",
+    "section_description": "General class control operator frequency privileges; primary and secondary allocations"
+  },
+  {
+    "subelement_id": "G1",
+    "section_id": "G1B",
+    "section_description": "Antenna structure limitations; good engineering and good amateur practice; beacon operation; prohibited transmissions; retransmitting radio signals"
+  },
+  {
+    "subelement_id": "G1",
+    "section_id": "G1C",
+    "section_description": "Transmitter power regulations; data emission standards; 60-meter operation requirements"
+  },
+  {
+    "subelement_id": "G1",
+    "section_id": "G1D",
+    "section_description": "Volunteer Examiners and Volunteer Examiner Coordinators; temporary identification; element credit"
+  },
+  {
+    "subelement_id": "G1",
+    "section_id": "G1E",
+    "section_description": "Control categories; repeater regulations; third-party rules; ITU regions; automatically controlled digital station"
+  },
+  {
+    "subelement_id": "G2",
+    "section_id": "G2A",
+    "section_description": "Phone operating procedures; USB/LSB conventions; breaking into a contact; VOX operation"
+  },
+  {
+    "subelement_id": "G2",
+    "section_id": "G2B",
+    "section_description": "Operating courtesy; band plans; emergencies, including drills and emergency communications"
+  },
+  {
+    "subelement_id": "G2",
+    "section_id": "G2C",
+    "section_description": "CW operating procedures and procedural signals; Q signals and common abbreviations: full break-in"
+  },
+  {
+    "subelement_id": "G2",
+    "section_id": "G2D",
+    "section_description": "Volunteer Monitoring Program; HF operations"
+  },
+  {
+    "subelement_id": "G2",
+    "section_id": "G2E",
+    "section_description": "Digital operating procedures"
+  },
+  {
+    "subelement_id": "G3",
+    "section_id": "G3A",
+    "section_description": "Sunspots and solar radiation; ionospheric disturbances; propagation forecasting and indices"
+  },
+  {
+    "subelement_id": "G3",
+    "section_id": "G3B",
+    "section_description": "Maximum Usable Frequency; Lowest Usable Frequency; propagation"
+  },
+  {
+    "subelement_id": "G3",
+    "section_id": "G3C",
+    "section_description": "Ionospheric layers; critical angle and frequency; HF scatter; Near Vertical Incidence Skywave"
+  },
+  {
+    "subelement_id": "G4",
+    "section_id": "G4A",
+    "section_description": "Station operation and setup"
+  },
+  {
+    "subelement_id": "G4",
+    "section_id": "G4B",
+    "section_description": "Test and monitoring equipment; two-tone test"
+  },
+  {
+    "subelement_id": "G4",
+    "section_id": "G4C",
+    "section_description": "Interference to consumer electronics; grounding; DSP"
+  },
+  {
+    "subelement_id": "G4",
+    "section_id": "G4E",
+    "section_description": "HF mobile radio installations; alternative energy source operation"
+  },
+  {
+    "subelement_id": "G5",
+    "section_id": "G5A",
+    "section_description": "Reactance; inductance; capacitance; impedance; impedance matching"
+  },
+  {
+    "subelement_id": "G5",
+    "section_id": "G5B",
+    "section_description": "The decibel; current and voltage dividers; electrical power calculations; sine wave root-mean-square (RMS) values; PEP calculations"
+  },
+  {
+    "subelement_id": "G5",
+    "section_id": "G5C",
+    "section_description": "Resistors, capacitors, and inductors in series and parallel; transformers"
+  },
+  {
+    "subelement_id": "G6",
+    "section_id": "G6A",
+    "section_description": "Resistors; capacitors; inductors; rectifiers; solid-state diodes and transistors; vacuum tubes; batteries"
+  },
+  {
+    "subelement_id": "G6",
+    "section_id": "G6B",
+    "section_description": "Analog and digital integrated circuits (ICs); memory; I/O devices; microwave ICs (MMICs); display devices; connectors; ferrite cores"
+  },
+  {
+    "subelement_id": "G7",
+    "section_id": "G7A",
+    "section_description": "Power supplies; schematic symbols"
+  },
+  {
+    "subelement_id": "G7",
+    "section_id": "G7B",
+    "section_description": "Digital circuits; amplifiers and oscillators"
+  },
+  {
+    "subelement_id": "G8",
+    "section_id": "G8A",
+    "section_description": "Carriers and modulation: AM; FM; single sideband; modulation envelope; digital modulation; overmodulation"
+  },
+  {
+    "subelement_id": "G8",
+    "section_id": "G8B",
+    "section_description": "Frequency mixing; multiplication; bandwidths of various modes; deviation; duty cycle; intermodulation"
+  },
+  {
+    "subelement_id": "G8",
+    "section_id": "G8C",
+    "section_description": "Digital emission modes "
+  },
+  {
+    "subelement_id": "G9",
+    "section_id": "G9A",
+    "section_description": "Antenna feed lines: characteristic impedance and attenuation; SWR calculation, measurement, and effects; matching networks"
+  },
+  {
+    "subelement_id": "G9",
+    "section_id": "G9B",
+    "section_description": "Basic antennas"
+  },
+  {
+    "subelement_id": "G9",
+    "section_id": "G9C",
+    "section_description": "Directional antennas"
+  },
+  {
+    "subelement_id": "G9",
+    "section_id": "G9D",
+    "section_description": "Specialized antennas"
+  },
+  {
+    "subelement_id": "G0",
+    "section_id": "G0A",
+    "section_description": "RF safety principles, rules and guidelines; routine station evaluation"
+  },
+  {
+    "subelement_id": "G0",
+    "section_id": "G0B",
+    "section_description": "Station safety: electrical shock, safety grounding, fusing, interlocks, wiring, antenna and tower safety"
+  }
+]

@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 const questionSchema = new mongoose.Schema({
   question_text: String,
   id: String,
+  subelement_id: String,
+  section_id: String,
   answer: String,
   choices: {
     A: String,

@@ -1,5 +1,6 @@
 import sys
 from utils import is_question_divider, is_question_id, is_new_section
+import json
 
 def get_section_descriptions(data_file):
     # section descriptions look like:
@@ -8,6 +9,10 @@ def get_section_descriptions(data_file):
     # license grant; Meanings of basic terms used in FCC rules; Interference; RACES rules; Phonetics; Frequency Coordinator
     #
     # They either end with a blank line or are followed by a question
+    # This method will convert it to an array of objects of the form:
+    # {subelement_id: "T5", section_id: "T5A", section_description: "desc"}
+
+
     descriptions = []
     with open(data_file, encoding="utf-8") as question_file:
 
@@ -18,7 +23,11 @@ def get_section_descriptions(data_file):
                 while not is_question_id(next_line) and not is_question_divider(next_line):
                     line += next_line
                     next_line = question_file.readline()
-                descriptions.append(line.replace("\n", ""))
+
+                line = line.replace("\n", "")
+
+                # indexes may have to be adjusted here depending on how the text file is setup
+                descriptions.append({"subelement_id": line[:2], "section_id": line[:3], "section_description": line[6:]})                
 
     return descriptions
 
@@ -29,6 +38,6 @@ else:
     data_file = sys.argv[1]
 
 sections = get_section_descriptions(data_file)
-
-for section in sections:
-    print(section)
+print(json.dumps(sections))
+# for section in sections:
+#     print(section)

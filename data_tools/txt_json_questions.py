@@ -35,6 +35,8 @@ def clean_question(question):
 
     # the id is always the first 5 characters of the id field
     q["id"] = question["id"][0:5]
+    q["subelement_id"] = question["id"][:2]
+    q["section_id"] = question["id"][:3]
     
     # if this function fails it is most likely because the text file has an error in it
     # each question should be on a seperate line - each choice must also be on a seperate 
