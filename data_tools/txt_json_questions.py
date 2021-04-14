@@ -1,79 +1,7 @@
 import re
 import json
 import sys
-
-
-def is_new_section(line):
-    # new sections start with something like: T0B - Antenna safety....
-    if re.search(r"^[A-Z]\d[A-Z]\s", line):
-        return True
-    else:
-        return False
-
-
-def is_question_id(line):
-    # Question IDs are in the form: T0B11 (A)
-    # The (A) is the answer but we just search for the ID here
-    if re.search(r"^\w\d\w\d{2}\s", line):
-        return True
-    else:
-        return False
-
-# each question is seperated by the token ~~
-
-
-def is_question_divider(line):
-    if re.search(r"^~~", line):
-        return True
-    else:
-        return False
-
-
-def get_subelements(data_file):
-    subelements = []
-
-    with open(data_file, encoding="utf-8") as question_file:
-        # we are looking for all lines that start with SUBELEMENT
-
-        line = question_file.readline()
-        while line:
-            if re.search(r"^SUBELEMENT\s\w\d", line):
-                # some SUBELEMENT lines might be more than one line long
-                temp_file_pos = question_file.tell()
-                next_line = question_file.readline()
-                if not is_new_section(next_line) and not is_question_id(next_line) and next_line != "":
-                    line += next_line
-                else:
-                    # put the line we just read back
-                    question_file.seek(temp_file_pos)
-
-                subelements.append(line.replace("\n", ""))
-            line = question_file.readline()
-
-        return subelements
-
-
-def get_section_descriptions(data_file):
-    # section descriptions look like:
-    #
-    # T1A - Amateur Radio Service: purpose and permissible use of the Amateur Radio Service, operator/primary station
-    # license grant; Meanings of basic terms used in FCC rules; Interference; RACES rules; Phonetics; Frequency Coordinator
-    #
-    # They either end with a blank line or are followed by a question
-    descriptions = []
-    with open(data_file, encoding="utf-8") as question_file:
-
-        for line in question_file:
-            if is_new_section(line):
-                # check for multiple lines
-                next_line = question_file.readline()
-                while not is_question_id(next_line) and not is_question_divider(next_line):
-                    line += next_line
-                    next_line = question_file.readline()
-                descriptions.append(line.replace("\n", ""))
-
-    return descriptions
-
+from utils import is_new_section, is_question_id, is_question_divider
 
 def get_all_questions(data_file):
     questions = []
@@ -204,27 +132,7 @@ def questions_to_json(data_file):
 
     for question in unclean_questions:
         cleaned_questions.append(clean_question(question))
-
-    # questions = group_questions(cleaned_questions)
-
-    # sections = get_section_descriptions(data_file)
-    # print("Num Sections: {0}".format(len(sections)))
-    # sub_elements = get_subelements(data_file)
-    # subelements_array = []
-
-    # for element in sub_elements:
-    #     se_id = element[11:13]
-    #     brackets_loc = element.find("[") + 1
-    #     data = element[brackets_loc:-1].split()
-    #     num_groups = data[4]
-    #     num_questions = data[0]
-    #     subelements_array.append(
-    #         {"id": se_id, "desc": element, "num_groups": num_groups, "num_questions": num_questions})
-
-    # # print(subelements_array)
-    # for e in subelements_array:
-    #     print(e)
-    # return json.dumps(questions)
+  
     return json.dumps(cleaned_questions)
 
 
