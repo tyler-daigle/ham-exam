@@ -107,8 +107,15 @@ def clean_question(question):
 
     # the id is always the first 5 characters of the id field
     q["id"] = question["id"][0:5]
+    
+    # if this function fails it is most likely because the text file has an error in it
+    # each question should be on a seperate line - each choice must also be on a seperate 
+    # line
+
     # print the id of the question - for debugging errors in the text files
+    # ***********************************************************************
     # print(q["id"])
+    # ***********************************************************************
 
     # index 7 is the correct answer
     q["answer"] = question["id"][7]
@@ -124,7 +131,7 @@ def clean_question(question):
     choice_text = ""
 
     # get the actual question
-    # print(question_data[data_index])
+    # keep checking the array elements until one of them starts with A.
     while question_data[data_index][:2] != "A.":
         question_text += question_data[data_index]
         data_index += 1
@@ -221,6 +228,14 @@ def questions_to_json(data_file):
     return json.dumps(cleaned_questions)
 
 
-data_file = "../data/tech_questions.txt"
-json_data = questions_to_json(data_file)
+if len(sys.argv) < 2:
+    print("No data file provided")
+else:
+    data_file = sys.argv[1]
+# data_file = "../data/tech_questions.txt"
+try:
+    json_data = questions_to_json(data_file)
+except OSError:
+    print("{0} not found.".format(data_file))
+    exit()
 print(json_data)
