@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const Question = require("./models/Question");
+const SubElement = require("./models/SubElement");
 const {loadExamData} = require("./utils/examData");
 
 mongoose
@@ -35,6 +36,7 @@ function startServer(examData) {
   });
 
   app.get("/questions", function (req, res) {
+    // get questions by ID, example: /questions?id=T1A01
     if ("id" in req.query) {
       Question.findOne({ id: req.query.id }, (err, data) => {
         if (!err) {
@@ -45,6 +47,13 @@ function startServer(examData) {
           }
         }
       });
+    } else if("section" in req.query) {
+      // get all questions in a section
+      // Example: /questions?section=T1A
+      
+      const {section} = req.query;
+
+      Question.find({section_id: section}).then(data => res.json({count: data.length, data})).catch(err => res.json({msg: err}));
     } else {
       res.send("Error");
     }
@@ -64,6 +73,23 @@ function startServer(examData) {
   app.get("/exams/extra", function(req, res) {
     res.json(examData.E)
   });
+
+  app.get("/subelements", function(req, res) {
+    SubElement.find().then(data=> res.json(data));
+  });
+
+  app.get("/subelements/general", function(req, res) {
+    SubElement.find({subelement_id: {$regex: /G[0-9]/}}).then(data => res.json(data));    
+  });
+
+  app.get("/subelements/technician", function(req, res) {
+    SubElement.find({subelement_id: {$regex: /T[0-9]/}}).then(data => res.json(data));    
+  });
+
+  app.get("/subelements/extra", function(req, res) {
+    SubElement.find({subelement_id: {$regex: /E[0-9]/}}).then(data => res.json(data));    
+  });
+
   app.listen(8080, () => {
     console.log("Server listening on port 8080");
   });
