@@ -59,6 +59,8 @@ function startServer(examData) {
     }
   });
 
+  // /exams routes return data about each exam, such as number of questions and the sections that
+  // each exam covers.
   app.get("/exams", function(req,res) {
     res.json(examData);
   });
