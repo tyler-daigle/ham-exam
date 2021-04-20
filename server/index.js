@@ -2,15 +2,17 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const Question = require("./models/Question");
+const {loadExamData} = require("./utils/examData");
 
 mongoose
   .connect("mongodb://localhost:27017/ham_test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => {
+  .then(async () => {
     console.log("Connected to database. Starting Server");
-    startServer();
+    const examData = await loadExamData();
+    startServer(examData);
   })
   .catch((e) => {
     console.log(`Error connecting to the database: ${e}`);
@@ -22,7 +24,8 @@ process.on("exit", () => {
   mongoose.connection.close();
 });
 
-function startServer() {
+function startServer(examData) {
+  console.log(examData);
   const app = express();
   app.use(cors());
 
@@ -47,6 +50,20 @@ function startServer() {
     }
   });
 
+  app.get("/exams", function(req,res) {
+    res.json(examData);
+  });
+  app.get("/exams/technician", function(req, res) {
+    res.json(examData.T)
+  });
+
+  app.get("/exams/general", function(req, res) {
+    res.json(examData.G)
+  });
+
+  app.get("/exams/extra", function(req, res) {
+    res.json(examData.E)
+  });
   app.listen(8080, () => {
     console.log("Server listening on port 8080");
   });

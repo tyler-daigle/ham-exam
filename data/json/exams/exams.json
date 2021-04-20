@@ -1,0 +1,29 @@
+[
+    {
+        "exam_name" : "Technician Class",
+        "exam_id" : "T",
+        "subelements" : [
+            "T1", "T2", "T3", "T4","T5", "T6", "T7", "T8", "T9", "T0"
+        ],
+        "totalQuestions" : 406,
+        "numExamQuestions" : 35,
+        "requiredCorrect" : 26
+    },
+    {
+        "exam_name" : "General Class",
+        "exam_id" : "G",
+        "subelements" : ["G1","G2","G3","G4","G5","G6","G7","G8","G9","G0"]
+        ,
+        "totalQuestions" : 436,
+        "numExamQuestions" : 35,
+        "requiredCorrect" : 26
+    },
+    {
+        "exam_name" : "Amateur Extra Class",
+        "exam_id" : "E",
+        "subelements" : ["E1","E2","E3","E4","E5","E6","E7","E8","E9","E0"],
+        "totalQuestions" : 618,
+        "numExamQuestions" : 50,
+        "requiredCorrect" : 37
+    }
+]

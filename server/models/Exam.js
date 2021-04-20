@@ -15,7 +15,6 @@ const examSchema = new mongoose.Schema({
     totalQuestions: Number, // total number of questions in the pool
     numExamQuestions: Number, // number of questions that are on the exam
     requiredCorrect: Number // the number of questions you must get correct to pass
-
 });
 
 const Exam = mongoose.model("Exam", examSchema);
