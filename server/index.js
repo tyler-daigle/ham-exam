@@ -37,18 +37,18 @@ function startServer(examData) {
   const app = express();
   app.use(cors());
 
-  app.get("/", function (req, res) {
-    console.log("Got request");
-    res.send("Hello, World!");
-  });
-
   app.get("/question/:questionId", function (req, res) {
-    Question.findOne({ id: req.params.questionId }).then(data => res.json(data));    
+    Question.findOne({ id: req.params.questionId }).then(data => res.json(data));
   });
 
   // /questions/section/sectionId will get all the questions that are in the section
   app.get("/questions/section/:sectionId", function (req, res) {
     Question.find({ section_id: req.params.sectionId }).then(data => res.json(data));
+  });
+
+  // get all questions in a subelement
+  app.get("/questions/subelement/:subelementId", function (req, res) {
+    Question.find({ subelement_id: req.params.subelementId }).then(data => res.json(data));
   });
 
   // /exams routes return data about each exam, such as number of questions and the sections that
@@ -61,6 +61,21 @@ function startServer(examData) {
     res.json(examData.T)
     console.log(req.params.subId);
   });
+
+
+  // get all the questions for the technician exam
+  app.get("/exams/technician/questions", function (req, res) {
+    Question.find({ subelement_id: /T[0-9]/ }).then(data => res.json(data));
+  });
+
+  app.get("/exams/general/questions", function (req, res) {
+    Question.find({ subelement_id: /G[0-9]/ }).then(data => res.json(data));
+  });
+
+  app.get("/exams/extra/questions", function (req, res) {
+    Question.find({ subelement_id: /E[0-9]/ }).then(data => res.json(data));
+  });
+
 
   // /subelement/:subId gets the description of a specific subelement (subId)
   app.get("/subelement/:subId", function (req, res) {
