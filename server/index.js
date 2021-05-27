@@ -4,13 +4,12 @@ const mongoose = require("mongoose");
 const Question = require("./models/Question");
 const SubElement = require("./models/SubElement");
 const Section = require("./models/Section");
+const { serverPort, databaseHost } = require("./config.js");
 
 const { loadExamData } = require("./utils/examData");
-const port = 8080;
-
 // Connect to the server
 mongoose
-  .connect("mongodb://localhost:27017/ham_test", {
+  .connect(`mongodb://${databaseHost}:27017/ham_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -35,6 +34,7 @@ process.on("exit", () => {
 // called after the server has successfully started
 function startServer(examData) {
   const app = express();
+
   app.use(cors());
 
   app.get("/question/:questionId", function (req, res) {
@@ -44,6 +44,10 @@ function startServer(examData) {
   // /questions/section/sectionId will get all the questions that are in the section
   app.get("/questions/section/:sectionId", function (req, res) {
     Question.find({ section_id: req.params.sectionId }).then(data => res.json(data));
+  });
+
+  app.get("/questions/section/", function (req, res) {
+    res.json([]); // temp fix for a request to a blank sectionId
   });
 
   // get all questions in a subelement
@@ -57,9 +61,22 @@ function startServer(examData) {
     res.json(examData);
   });
 
-  app.get("/exams/technician", function (req, res) {
-    res.json(examData.T)
-    console.log(req.params.subId);
+  // get the info about a specific exam
+  app.get("/exams/:examName", function (req, res) {
+    const exam = req.params.examName.toLowerCase();
+    switch (exam) {
+      case 'technician':
+        res.json(examData.T);
+        break;
+      case 'general':
+        res.json(examData.G);
+        break;
+      case 'extra':
+        res.json(examData.E);
+        break;
+      default:
+        res.json({ msg: "No such exam" });
+    }
   });
 
 
@@ -107,7 +124,7 @@ function startServer(examData) {
     Section.find({ subelement_id: req.params.subId }).then(data => res.json(data));
   });
 
-  app.listen(port, () => {
-    console.log(`Server listening on port ${port} `);
+  app.listen(serverPort, () => {
+    console.log(`Server listening on port ${serverPort} `);
   });
 }
